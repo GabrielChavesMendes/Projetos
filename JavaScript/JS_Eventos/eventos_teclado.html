@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <script>
+            function acao1(){
+                alert('Conferindo qualquer tecla antes')
+            }
+
+            function acao2(){
+                alert('Conferindo qualquer tecla depois')
+            }
+
+            function acao3(){
+                alert('Conferindo, exceto teclas especiais(como Shift, Ctrl), antes')
+            }
+        </script>
+    </head>
+    
+    <body>
+        <p>Onkeydowm</p>
+        <div style="display: felx; margin-bottom: 20px;">
+            <input onkeydown="acao1()" type="text" style="border-radius: 2px;">
+        </div>
+
+        <p>Onkeyup</p>
+        <div style="display: felx; margin-bottom: 20px;">
+            <input onkeyup="acao2()" type="text" style="border-radius: 2px;">
+        </div>
+
+        <p>Onkeypress</p>
+        <div style="display: felx; margin-bottom: 20px;">
+            <input onkeypress="acao3()" type="text" style="border-radius: 2px;">
+        </div>
+    </body>
+</html>

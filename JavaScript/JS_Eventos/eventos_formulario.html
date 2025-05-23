@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <script>
+
+        </script>
+    </head>
+
+    <body>
+        
+        <p>Onfocus = Dispara o evento sempre que clicar no elemento do foco</p>
+        <input onfocus="console.log('Focou')" type="text">
+
+        <p>Onblur = Dispara o evento sempre que clicar fora do elemento do foco, tirando seu foco</p>
+        <input onblur="console.log('Desfocou')" type="text">
+
+        <p>Onchange = Dispara o evento sempre que mudar o foco do elemento</p>
+        <select onchange="console.log('Foco alterado')">
+            <option>-- Selecione --</option>
+            <option value="1">Primeira opção</option>
+            <option value="2">Segunda opção</option>
+        </select>
+
+    </body>
+</html>

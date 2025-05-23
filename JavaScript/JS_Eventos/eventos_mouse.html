@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <script>
+            function acao1(){
+                alert('Click unico')
+            }
+
+            function acao2(){
+                alert('Dois clicks')
+            }
+
+            function acao3(){
+                alert('Segurar o click')
+            }
+
+            function acao4(){
+                alert('Passou o cursor no elemento')
+            }
+
+            function acao5(){
+                alert('Tirou o cursor do elemento')
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--UM CLICK-->
+        <div onclick="acao1()" style="justify-content: center; display: flex; background: #ccc; height: 150px; width: 150px; margin-bottom: 40px;">
+            <p style="margin-top: 60px;">Onclick</p>
+        </div>
+
+        <!--DOIS CLICKS-->
+        <div ondblclick="acao2()" style="justify-content: center; display: flex; background: #ccc; height: 150px; width: 150px; margin-bottom: 40px;">
+            <p style="margin-top: 60px;">Ondblclick</p>
+        </div>
+
+        <!--SEGURAR O CLICK-->
+        <div onmouseup="acao3()" style="justify-content: center; display: flex; background: #ccc; height: 150px; width: 150px; margin-bottom: 40px;">
+            <p style="margin-top: 60px;">Onmouseup</p>
+        </div>
+
+        <!--PASSAR COM O MOUSE-->
+        <div onmouseover="acao4()" style="justify-content: center; display: flex; background: #ccc; height: 150px; width: 150px; margin-bottom: 40px;">
+            <p style="margin-top: 60px;">Onmouseover</p>
+        </div>
+
+        <!--TIRAR O MOUSE-->
+        <div onmouseout="acao5()" style="justify-content: center; display: flex; background: #ccc; height: 150px; width: 150px; margin-bottom: 40px;">
+            <p style="margin-top: 60px;">Onmouseout</p>
+        </div>
+
+    </body>
+</html>

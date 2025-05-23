@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <script>
+
+            var janela
+
+            function abrirPopUp(){
+               janela = window.open('', 'nova_janela', 'width=700, height=500')
+            }
+
+            function fecharPopUp(){
+                janela.close()
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <!--Abrir pop up-->
+        <button onclick="abrirPopUp()">Abrir Janela</button>
+        <!--Fechar pop uo-->
+        <button onclick="fecharPopUp()">Fechar Janela</button>
+        <!--Abrir janela de impressão de página-->
+        <button onclick="window.print()">Imprimir</button>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <script>
+
+            //setTimeout faz a mensagem aparecer após um determinado tempo SEM repetição
+            setTimeout(function() { document.write('Contagem <br />') }, 1000)
+
+            var i = 5
+
+            //setInterval faz a mensagem aparecer após um determinado tempo COM repetição
+            setInterval(function() { 
+                document.write(i + '<br />')
+                 i-- 
+
+                 if(i === 0){
+                    //Quando o contador chegar a 0 irá recarregar a página
+                    window.location.reload()
+                 }
+            }, 1000)
+
+            //clearInterval faz com que as duas funções set parem de acontecer
+
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
