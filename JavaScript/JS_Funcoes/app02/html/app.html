@@ -10,8 +10,25 @@
 
     <body onresize="ajustaTamPalcoJogo()">
         
+        <div class="painel">
+            <div calss="vidas">
+                <img id="v1" src="/app02/imagens/coracao_cheio.png">
+                <img id="v2" src="/app02/imagens/coracao_cheio.png">
+                <img id="v3" src="/app02/imagens/coracao_cheio.png">
+            </div>
+
+            <div class="cronometro">
+                Tempo restante: <span id="cronometro"></span>
+            </div>
+
+        </div>
+
         <script>
-            posicaoRandomica()
+            document.getElementById('cronometro').innerHTML = tempo
+
+            var criaMosca = setInterval(function(){
+                posicaoRandomica()
+            }, criaMosquitoTempo)
         </script>
 
     </body>
